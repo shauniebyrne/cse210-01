@@ -1,0 +1,52 @@
+# CSE 210 Programming with Classes
+# Making a Tick Tack Toe game on a three by three grid
+# Author: Shauntal Byrne
+
+# Playing grid
+1|2|3
+-+-+-
+4|5|6
+-+-+-
+7|8|9
+
+# Created grid list
+grid = []
+
+keep_playing = 'yes'
+
+def main():
+    ''' Create a while loop to keep the players playing until the game
+    is either tied or won'''
+    while keep_playing == 'yes':
+        players_choice = int(input('What is your choice (between 1 and 9)?' ))
+        display_grid(players_choice)  
+
+    print()
+    print('Good game. Thanks for playing!')
+
+def display_grid(players_choice):
+    grid = []
+    for i in range(9):
+        if i == 1:
+            print('|', end='')
+        
+        elif i == 2:
+            print('|', end='')
+
+        elif i == 3:
+            print('\n-+-+-\n', end='')
+
+        elif i == 4:
+            print('|', end='')
+
+        elif i == 5:
+            print('|', end='')
+
+        elif i == 6:
+            print('\n-+-+-\n', end='')
+
+        elif i == 7:
+            print('|', end='')
+
+        elif i == 8:
+            print('|', end='')
