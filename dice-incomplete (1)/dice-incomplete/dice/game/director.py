@@ -25,19 +25,19 @@ class Director:
         self.total_score = 0
 
         for i in range(5):
-            die = Die()
+            die = Die() # Die class
             self.dice.append(die)
 
-    def start_game(self):
+    def start_game(self):  # game loop
         """Starts the game by running the main game loop.
-        
+        Invokes three different methods
         Args:
             self (Director): an instance of Director.
         """
         while self.is_playing:
-            self.get_inputs()
-            self.do_updates()
-            self.do_outputs()
+            self.get_inputs() # method1:detects use rinput that happened since the last iteration
+            self.do_updates() # method2:advances the game simulation one step
+            self.do_outputs() # method3:draws the game info on the screen so the user can see what happened
 
     def get_inputs(self):
         """Ask the user if they want to roll.
@@ -59,7 +59,7 @@ class Director:
 
         for i in range(len(self.dice)):
             die = self.dice[i]
-            die.roll()
+            die.roll() # method from Die class 
             self.score += die.points 
         self.total_score += self.score
 
