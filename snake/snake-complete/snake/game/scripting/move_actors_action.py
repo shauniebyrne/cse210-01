@@ -1,5 +1,6 @@
 from game.scripting.action import Action
 
+
 class MoveActorsAction(Action):
     """
     An update action that moves all the actors.
@@ -8,10 +9,8 @@ class MoveActorsAction(Action):
     than zero.
     """
 
-
     def execute(self, cast, script):
-        """
-        Executes the move actors action.
+        """Executes the move actors action.
 
         Args:
             cast (Cast): The cast of Actors in the game.
