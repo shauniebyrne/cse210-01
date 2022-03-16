@@ -26,9 +26,9 @@ FONT_SMALL = 32
 FONT_LARGE = 48
 
 # SOUND
-BOUNCE_SOUND = "cse210-01/batter/batter-complete/batter/assets/sounds/boing.wav"
-WELCOME_SOUND = "cse210-01/batter/batter-complete/batter/assets/sounds/start.wav"
-OVER_SOUND = "cse210-01/batter/batter-complete/batter/assets/sounds/over.wav"
+BOUNCE_SOUND = "CSE210-01/cse210-01/batter/batter-complete/batter/assets/sounds/boing.wav"
+WELCOME_SOUND = "CSE210-01/cse210-01/batter/batter-complete/batter/assets/sounds/start.wav"
+OVER_SOUND = "CSE210-01/cse210-01/batter/batter-complete/batter/assets/sounds/over.wav"
 
 # TEXT
 ALIGN_CENTER = 0
